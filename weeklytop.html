@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Top Manga - MangaVerse</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: white;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: linear-gradient(135deg, #ff0077, #ff5733);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+        .weekly-top {
+            padding: 50px 20px;
+            background: #1a1a1a;
+        }
+        .weekly-title {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #ffd700;
+        }
+        .manga-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .manga-card {
+            width: 220px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 15px;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .manga-card:hover {
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+        }
+        .manga-cover {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .manga-card:hover .manga-cover {
+            transform: scale(1.05);
+        }
+        .rank-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #ff5733;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+        }
+        .rank-1 { background: #ffd700; color: #121212; } 
+        .rank-2 { background: #c0c0c0; color: #121212; } 
+        .rank-3 { background: #cd7f32; color: #121212; } 
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">MangaVerse</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Topmanga.html">Top Manga</a></li>
+                <li><a href="weekly-top.html">Weekly Top</a></li>
+                <li><a href="browse.html">Browse</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="weekly-top">
+        <h2 class="weekly-title">🔥 Weekly Top Manga 🔥</h2>
+        <div class="manga-list">
+            <div class="manga-card">
+                <span class="rank-badge rank-1">#1</span>
+                <a href="onepiece.html">
+                    <img src="https://i.pinimg.com/736x/c1/ef/c6/c1efc69f0624eb7c338714f34356fdea.jpg" alt="One Piece" class="manga-cover">
+                    <h3 class="manga-title">One Piece</h3>
+                </a>
+            </div>
+            <div class="manga-card">
+                <span class="rank-badge rank-2">#2</span>
+                <a href="jjk.html">
+                    <img src="https://th.bing.com/th/id/OIP.l3T0tEyGlGj7dXo5d2WipQHaKz?rs=1&pid=ImgDetMain" alt="Jujutsu Kaisen" class="manga-cover">
+                    <h3 class="manga-title">Jujutsu Kaisen</h3>
+                </a>
+            </div>
+            <div class="manga-card">
+                <span class="rank-badge rank-3">#3</span>
+                <a href="attackontitan.html">
+                    <img src="https://i5.walmartimages.com/seo/Attack-on-Titan-Fire-Wall-Poster-22-375-x-34-Framed_6692abd3-0914-4950-8c56-9596336a6da7.66bbc778dc9ccc1664ab4de0c7737778.jpeg" alt="Attack on Titan" class="manga-cover">
+                    <h3 class="manga-title">Attack On Titan</h3>
+                </a>
+            </div>
+            <div class="manga-card">
+                <span class="rank-badge">#4</span>
+                <a href="bleach.html">
+                    <img src="https://i.pinimg.com/originals/59/00/ea/5900ea0dd0277f813843b75190bddefc.jpg" alt="Bleach" class="manga-cover">
+                    <h3 class="manga-title">Bleach</h3>
+                </a>
+            </div>
+            <div class="manga-card">
+                <span class="rank-badge">#5</span>
+                <a href="vinlandsaga.html">
+                    <img src="https://m.media-amazon.com/images/I/71xaXeBqYTL._SL1200_.jpg" alt="vinlandsaga" class="manga-cover">
+                    <h3 class="manga-title">Vinland Saga</h3>
+                </a>
+            </div>
+            <div class="manga-card">
+                <span class="rank-badge">#6</span>
+                <a href="chainsaw-man.html">
+                    <img src="https://th.bing.com/th/id/OIP.C9m5VGuqClSuUaGkqfL8aAHaKv?rs=1&pid=ImgDetMain" alt="chainsaw-man" class="manga-cover">
+                    <h3 class="manga-title">chainsaw-man</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MangaVerse - Top Manga</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: white;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: linear-gradient(135deg, #ff0077, #ff5733);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+            padding: 120px 20px;
+            background: url('https://img.freepik.com/free-photo/illustration-anime-city_23-2151779683.jpg') no-repeat center center/cover;
+            animation: fadeIn 2s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        }
+        .manga-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 20px;
+        }
+        .manga-card {
+            text-align: center;
+            transition: transform 0.3s;
+            width: 220px;
+        }
+        .manga-card:hover {
+            transform: scale(1.05);
+        }
+        .manga-card a {
+            text-decoration: none;
+            color: white;
+        }
+        .manga-cover {
+            width: 200px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        }
+        .manga-title {
+            margin-top: 12px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .manga-info {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">MangaVerse</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Topmanga.html">Top Manga</a></li>
+                <li><a href="weeklytop.html">Weekly Top</a></li>
+                <li><a href="browse.html">Browse</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h2>Top Rated Manga</h2>
+    </section>
+    <main id="trending-manga" class="manga-grid">
+        <div class="manga-card"><a href="berserk.html"><img src="https://cdn.myanimelist.net/images/manga/1/157897l.jpg" alt="Berserk" class="manga-cover"><h3 class="manga-title">Berserk - 9.47</h3><p class="manga-info">Author: Kentaro Miura</p></a></div>
+        <div class="manga-card"><a href="steelballrun.html"><img src="https://th.bing.com/th/id/OIP.LCYXy9l7oSSA5t1nOPunMQHaKa" alt="JoJo's Bizarre Adventure Part 7: Steel Ball Run" class="manga-cover"><h3 class="manga-title">JoJo's Bizarre Adventure Part 7: Steel Ball Run - 9.30</h3><p class="manga-info">Author: Hirohiko Araki</p></a></div>
+        <div class="manga-card"><a href="onepiece.html"><img src="https://cdn.myanimelist.net/images/manga/2/253146.jpg" alt="One Piece" class="manga-cover"><h3 class="manga-title">One Piece - 9.22</h3><p class="manga-info">Author: Eiichiro Oda</p></a></div>
+        <div class="manga-card"><a href="vagabond.html"><img src="https://cdn.myanimelist.net/images/manga/3/126197l.jpg" alt="Vagabond" class="manga-cover"><h3 class="manga-title">Vagabond - 9.25</h3><p class="manga-info">Author: Takehiko Inoue</p></a></div>
+        <div class="manga-card"><a href="monster.html"><img src="https://th.bing.com/th/id/OIP.B0-LuYTGRO7WhvZZ_81RBwHaJ1?rs=1&pid=ImgDetMain" alt="Monster" class="manga-cover"><h3 class="manga-title">Monster - 9.15</h3><p class="manga-info">Author: Naoki Urasawa</p></a></div>
+        <div class="manga-card"><a href="slamdunk.html"><img src="https://cdn.myanimelist.net/images/manga/2/258749.jpg" alt="Slam Dunk" class="manga-cover"><h3 class="manga-title">Slam Dunk - 9.09</h3><p class="manga-info">Author: Takehiko Inoue</p></a></div>
+        <div class="manga-card"><a href="vinlandsaga.html"><img src="https://cdn.myanimelist.net/images/manga/2/188925.jpg" alt="Vinland Saga" class="manga-cover"><h3 class="manga-title">Vinland Saga - 9.07</h3><p class="manga-info">Author: Makoto Yukimura</p></a></div>
+        <div class="manga-card"><a href="fullmetal-alchemist.html"><img src="https://th.bing.com/th/id/OIP.Chx2RFAKqyGPRmofROTgSAHaLI?w=203&h=306&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Fullmetal Alchemist" class="manga-cover"><h3 class="manga-title">Fullmetal Alchemist - 9.04</h3><p class="manga-info">Author: Hiromu Arakawa</p></a></div>
+        <div class="manga-card"><a href="grand-blue.html"><img src="https://i.redd.it/ipntofvb93y11.jpg" alt="Grand Blue" class="manga-cover"><h3 class="manga-title">Grand Blue - 9.03</h3><p class="manga-info">Author: Kenji Inoue (writer), Kimitake Yoshioka (artist)</p></a></div>
+        <div class="manga-card"><a href="oyasumi-punpun.html"><img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781421586205/goodnight-punpun-vol-1-9781421586205_hr.jpg" alt="Oyasumi Punpun" class="manga-cover"><h3 class="manga-title">Oyasumi Punpun - 9.01</h3><p class="manga-info">Author: Inio Asano</p></a></div>
+        <div class="manga-card"><a href="kingdom.html"><img src="https://th.bing.com/th/id/OIP.ubUQQ7STc2peUa9pboX0jwHaKW?w=208&h=291&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Kingdom" class="manga-cover"><h3 class="manga-title">Kingdom - 9.01</h3><p class="manga-info">Author: Yasuhisa Hara</p></a></div>
+        <div class="manga-card"><a href="houseki-no-kuni.html"><img src="https://c.bookwalker.jp/9736582/t_700x780.jpg" alt="Houseki no Kuni (Land of the Lustrous)" class="manga-cover"><h3 class="manga-title">Houseki no Kuni (Land of the Lustrous) - 8.97</h3><p class="manga-info">Author: Haruko Ichikawa</p></a></div>
+        <div class="manga-card"><a href="20th-century-boys.html"><img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781421535388/naoki-urasawas-20th-century-boys-vol-20-9781421535388_hr.jpg" alt="20th Century Boys" class="manga-cover"><h3 class="manga-title">20th Century Boys - 8.95</h3><p class="manga-info">Author: Naoki Urasawa</p></a></div>
+        <div class="manga-card"><a href="real.html"><img src="https://th.bing.com/th/id/OIP.TjIZKRX51CjMk8wQERiuQQAAAA?rs=1&pid=ImgDetMain" alt="Real" class="manga-cover"><h3 class="manga-title">Real - 8.95</h3><p class="manga-info">Author: Takehiko Inoue</p></a></div>
+        <div class="manga-card"><a href="ashita-no-joe.html"><img src="https://pm1.narvii.com/7577/62f854416bb6dbb6425c764a68971bc9d81029ddr1-721-1024v2_hq.jpg" alt="Ashita no Joe" class="manga-cover"><h3 class="manga-title">Ashita no Joe (Tomorrow's Joe) - 8.94</h3><p class="manga-info">Author: Asao Takamori, Tetsuya Chiba</p></a></div>
+        <div class="manga-card"><a href="kaguya-sama.html"><img src="https://www.themoviedb.org/t/p/original/mmG1dDgjMJzrW6MLv3qHOf7mJcz.jpg" alt="Kaguya-sama: Love is War" class="manga-cover"><h3 class="manga-title">Kaguya-sama: Love is War - 8.91</h3><p class="manga-info">Author: Aka Akasaka</p></a></div>
+        <div class="manga-card"><a href="hunter-x-hunter.html"><img src="https://th.bing.com/th/id/OIP.6HUddKnrAhVipChl6084pwHaLH?rs=1&pid=ImgDetMain" alt="Hunter x Hunter" class="manga-cover"><h3 class="manga-title">Hunter x Hunter - 8.90</h3><p class="manga-info">Author: Yoshihiro Togashi</p></a></div>
+        <div class="manga-card"><a href="gto.html"><img src="https://th.bing.com/th/id/OIP.4KP-2Cl2UiBw1hK9hT9o5gHaK8?rs=1&pid=ImgDetMain" alt="GTO: Great Teacher Onizuka" class="manga-cover"><h3 class="manga-title">GTO: Great Teacher Onizuka - 8.85</h3><p class="manga-info">Author: Tohru Fujisawa</p></a></div>
+        <div class="manga-card"><a href="chainsaw-man.html"><img src="https://th.bing.com/th/id/OIP.KFyyZilRpVenZJSJ5D-k8AHaKv?rs=1&pid=ImgDetMain" alt="Chainsaw Man" class="manga-cover"><h3 class="manga-title">Chainsaw Man - 8.72</h3><p class="manga-info">Author: Tatsuki Fujimoto</p></a></div>
+    </main>
+</body>
+</html>

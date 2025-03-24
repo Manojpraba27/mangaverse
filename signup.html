@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - One Piece</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: url('https://wallpapercave.com/wp/wp8969004.jpg') no-repeat center center/cover;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+        }
+        .overlay-image {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            opacity: 0.8;
+            animation: floatShip 4s ease-in-out infinite alternate;
+        }
+
+        @keyframes floatShip {
+            0% { transform: translateY(0px); }
+            100% { transform: translateY(-10px); }
+        }
+        .signup-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            width: 350px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .signup-container h2 {
+            margin-bottom: 20px;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .signup-container input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .signup-container input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .signup-container input:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 8px #ffd700;
+        }
+        .signup-container button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background: linear-gradient(45deg, #ff7b00, #ffd700);
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .signup-container button:hover {
+            background: linear-gradient(45deg, #ffd700, #ff7b00);
+            transform: scale(1.05);
+        }
+        .signup-container a {
+            display: block;
+            margin-top: 15px;
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: 400;
+            transition: 0.3s;
+        }
+
+        .signup-container a:hover {
+            text-decoration: underline;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://1.bp.blogspot.com/-cJTX8dPvWq4/X2NdwVtrstI/AAAAAAAAAXg/DEzqxM8euDAZJF9A5jpVa4oVLYfj-X9XACLcBGAsYHQ/s2750/logo%2Bone%2Bpiece%2B1.png" alt="One Piece Logo" class="logo">
+    
+    <div class="signup-container">
+        <h2>Join the Straw Hat Crew!</h2>
+        <form action="signup_process.php" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+            <button type="submit">Set Sail!</button>
+        </form>
+        <a href="login.html">Already a pirate? Login here!</a>
+    </div>
+
+    <img src="https://i.pinimg.com/originals/0b/79/27/0b7927979308fa35d1bbd315767e9078.png" alt="Pirate Ship" class="overlay-image">
+</body>
+</html>

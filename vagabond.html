@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagabond - Read Chapters</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: white;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: linear-gradient(135deg, #ff0077, #ff5733);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+        nav ul li a:hover {
+            color: #fa0c0c;
+        }
+
+        /* Chapter Section */
+        .chapter-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 40px;
+            justify-content: center;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .chapter-card {
+            background-color: #222;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .chapter-card:hover {
+            background-color: #ff5733;
+            transform: scale(1.05);
+        }
+        .chapter-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .chapter-card a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: color 0.3s ease-in-out;
+        }
+        .chapter-card a:hover {
+            color: #ffd700;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                padding: 15px;
+            }
+            nav ul {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Vagabond - Chapters</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Topmanga.html">Top Manga</a></li>
+                <li><a href="weeklytop.html">Weekly Top</a></li>
+                <li><a href="browse.html">Browse</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Read Vagabond Chapters</h2>
+        <div class="chapter-list">
+            <div class="chapter-card">
+                <img src="https://mixmangastore.com/cdn/shop/products/71TY7kJBo9L.jpg?v=1622323128" alt="Sword Mountain">
+                <a href="CH001 - Vagabond [@Manga_Complex].pdf" target="_blank">Chapter 1: Sword Mountain </a>
+            </div>
+            <div class="chapter-card">
+                <img src="https://th.bing.com/th/id/OIP.GG3uuaWWOHipRABfBoZuuwHaKw?rs=1&pid=ImgDetMain" alt="Demon Child">
+                <a href="CH002 - Vagabond [@Manga_Complex].pdf" target="_blank">Chapter 2: Demon Child</a>
+            </div>
+            <div class="chapter-card">
+                <img src="https://th.bing.com/th/id/OIP.MW-KwQm4DHy0XeOhtkRs1AHaKx?rs=1&pid=ImgDetMain" alt="A New Life">
+                <a href="CH003 - Vagabond [@Manga_Complex].pdf" target="_blank">Chapter 3: A New Life </a>
+            </div>
+            <div class="chapter-card">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_901435-MLU69772935572_062023-O.webp" alt="Demon Awakens">
+                <a href="CH004 - Vagabond [@Manga_Complex].pdf" target="_blank">Chapter 4: Demon Awakens</a>
+            </div>
+            <div class="chapter-card">
+                <img src="https://th.bing.com/th/id/OIP.rqO-kwea6mo37GbmuUWbcgHaHa?rs=1&pid=ImgDetMain" alt="The Road Home">
+                <a href="CH005 - Vagabond [@Manga_Complex].pdf" target="_blank">Chapter 5: The Road Home</a>
+            </div>
+            <div class="chapter-card">
+                <img src="https://i.pinimg.com/originals/46/bc/06/46bc064699ba0f76d12d8ad5ec056fa6.png" alt="The Man with the Crucifix">
+                <a href="CH006 - Vagabond [@Manga_Complex].pdf" target="_blank">Chapter 6: The Man with the Crucifix</a>
+            </div>
+            <div class="chapter-card">
+                <img src="https://th.bing.com/th/id/OIP.yg6sA1wxqwCton-fSlHvKQHaLH?rs=1&pid=ImgDetMain" alt="The Path of the Sword">
+                <a href="CH007 - Vagabond [@Manga_Complex].pdf" target="_blank">Chapter 7: The Path of the Sword</a>
+            </div>
+            <div class="chapter-card">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_842604-MLU70074057115_062023-O.webp" alt="Footprints">
+                <a href="CH008 - Vagabond [@Manga_Complex].pdf" target="_blank">Chapter 8: Footprints</a>
+            </div>
+            <div class="chapter-card">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/51T7NFJv6NL.jpg" alt="Seijuro Yoshioka">
+                <a href="CH009 - Vagabond [@Manga_Complex].pdf" target="_blank">Chapter 9: Seijuro Yoshioka</a>
+            </div>
+            <div class="chapter-card">
+                <img src="https://th.bing.com/th/id/OIP.LpM9sklKlwPGaStUTS-iHQHaLK?rs=1&pid=ImgDetMain" alt="Duel with Yoshioka">
+                <a href="CH010 - Vagabond [@Manga_Complex].pdf" target="_blank">Chapter 10: Duel with Yoshioka</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
